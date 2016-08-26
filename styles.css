@@ -1,0 +1,113 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo+Bhaina';
+
+body {
+	color: #fff;
+	font-family: 'Baloo Bhaina', cursive;
+
+}
+
+main {
+	background: url('./img/main-bg.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+   	align-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+	font-size: 24px;
+	font-weight: bold;
+	width: 100vw;
+}
+
+a {
+	color: #fff;
+	font-size: 25px;
+
+}
+
+#hamburger {
+	display: none;
+	border: solid #fff;
+	border-radius: 50%;
+	padding: 5px 10px;
+}
+
+#hamburger button {
+	background: none;
+	border: none;
+    	box-shadow: none;
+    	color: #fff;
+    	padding-top: 5px;
+    	padding-bottom: 0;
+}
+
+#social {
+	display: none;
+
+}
+
+#title h1 {
+	font-size: 85px;
+	font-family: 'Baloo Bhaina', cursive;
+	margin-bottom: -36px;
+}
+
+#title h3 {
+	/*font-size: */
+	margin-bottom: 0;
+}
+
+#circle {
+	display: inline-block;
+	border: solid #fff;
+	border-radius: 50%;
+	padding: 4px 13px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+#circle button {
+	background: none;
+	border: none;
+    	box-shadow: none;
+    	color: #D4D4D4;
+    	padding-top: 10px;
+    	font-size: 22px;
+}
+
+
+
+@media (max-width: 620px) {
+	nav {
+		justify-content: space-between;
+	}
+
+	#hamburger {
+		display: block;
+		margin-left: 25px;
+	}
+
+	#social {
+		display: flex;
+		justify-content: space-around;
+		width: 115px;
+		margin-right: 50px;
+		padding-top: 10px;
+	}
+
+	.links {
+		display: none;
+	}
+
+	/*#twitter, #facebook: {
+		display: block;
+	}*/
+}
